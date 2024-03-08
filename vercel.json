@@ -2,11 +2,9 @@
   "version": 2,
   "routes": [
     {
-      "src": "/api/offers/all/(.*)",
-      "dest": "/api/offers/all/$1",
-      "headers": {
-        "Strict-Transport-Security": "max-age=0"
-      }
+      "src": "/api/(.*)",
+      "dest": "http://deayloop.backend.test.starway.agency:8002/api/$1",
+      "methods": ["GET"]
     }
   ]
 }
