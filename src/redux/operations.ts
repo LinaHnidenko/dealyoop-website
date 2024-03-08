@@ -41,9 +41,7 @@ export const getOffers = createAsyncThunk<
   { rejectValue: ErrorResponse }
 >("offers/getAll", async (_, thunkAPI) => {
   try {
-    const response: AxiosResponse<Offer[]> = await axios.get(
-      "/api/offers/all/"
-    );
+    const response: AxiosResponse<Offer[]> = await axios.get("/api/offers/all");
     return response.data;
   } catch (error) {
     return thunkAPI.rejectWithValue({
