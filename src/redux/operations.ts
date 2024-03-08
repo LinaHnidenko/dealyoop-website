@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, { AxiosResponse } from "axios";
 
-axios.defaults.baseURL = "http://deayloop.backend.test.starway.agency:8002";
+axios.defaults.baseURL = "https://deayloop.backend.test.starway.agency:8002";
 
 interface Category {
   id: number;
