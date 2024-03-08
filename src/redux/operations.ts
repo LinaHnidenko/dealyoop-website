@@ -42,7 +42,7 @@ export const getOffers = createAsyncThunk<
 >("offers/getAll", async (_, thunkAPI) => {
   try {
     const response: AxiosResponse<Offer[]> = await axios.get(
-      "http://deayloop.backend.test.starway.agency:8002/api/offers/all/"
+      "https://deayloop.backend.test.starway.agency:8002/api/offers/all/"
     );
     return response.data;
   } catch (error) {
