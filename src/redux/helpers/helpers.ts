@@ -1,18 +1,3 @@
-// export const handlePendingGet = (state) => {
-//   state.offers.isLoading = true;
-// };
-
-// export const handleFulfilledGet = (state, action) => {
-//   state.offers.isLoading = false;
-//   state.offers.error = null;
-//   state.offers.items = action.payload;
-// };
-
-// export const handleRejectedGet = (state, action) => {
-//   state.contacts.isLoading = false;
-//   state.contacts.error = action.payload;
-// };
-
 import { PayloadAction } from "@reduxjs/toolkit";
 import { ErrorResponse, Offer, OffersState } from "../operations";
 

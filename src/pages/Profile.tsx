@@ -8,7 +8,7 @@ const Profile = () => {
     <>
       <Header />
       <div className="min-w-[350px] max-w-[540px] md:max-w-[1200px] xl:max-w-[1192px] mx-auto md:p-6 p-4 mb-[60px]">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <AsideProfile />
           <div>
             <h2 className="text-2xl font-bold mb-8">Profile</h2>

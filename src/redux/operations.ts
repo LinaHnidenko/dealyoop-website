@@ -31,12 +31,6 @@ export interface OffersState {
   error: ErrorResponse | null;
 }
 
-// interface Offer {
-//   id: number;
-//   slug: string;
-//   title: string;
-// }
-
 export interface ErrorResponse {
   message: string;
 }

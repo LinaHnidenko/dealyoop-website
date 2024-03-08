@@ -17,8 +17,18 @@ const Footer = () => {
             <img src="/logo/logo.png" alt="" />
           </div>
           <div className="flex items-center justify-center gap-3 text-sm flex-wrap">
-            <a href="mailto:support@Dealyoop.com">support@Dealyoop.com</a>
-            <a href="tel:(425) 505-3804">(425) 505-3804</a>
+            <a
+              href="mailto:support@Dealyoop.com"
+              className="hover:text-blue-500 focus:text-blue-500 transition-all"
+            >
+              support@Dealyoop.com
+            </a>
+            <a
+              href="tel:(425) 505-3804"
+              className="hover:text-blue-500 focus:text-blue-500 transition-all"
+            >
+              (425) 505-3804
+            </a>
           </div>
           <ul className="hidden md:flex justify-center items-center gap-2 text-sm">
             {footerLinks.map((link, idx) => (

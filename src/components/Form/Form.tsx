@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import { Notify } from "notiflix";
 import { MdOutlineUploadFile } from "react-icons/md";
 import * as Yup from "yup";
 
@@ -18,8 +19,10 @@ const Form = () => {
       email: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
+      Notify.success("Your data was sent.");
       console.log("Form data:", values);
+      resetForm();
     },
   });
 
@@ -30,7 +33,7 @@ const Form = () => {
           Full Name:
         </label>
         <input
-          className="w-full border-gray-200 border rounded-lg"
+          className="w-full border-gray-200 border rounded-lg px-3 py-2"
           type="text"
           id="name"
           name="name"
@@ -48,7 +51,7 @@ const Form = () => {
           Phone:
         </label>
         <input
-          className="w-full border-gray-200 border rounded-lg"
+          className="w-full border-gray-200 border rounded-lg px-3 py-2"
           type="text"
           id="phone"
           name="phone"
@@ -66,7 +69,7 @@ const Form = () => {
           E-mail:
         </label>
         <input
-          className="w-full border-gray-200 border rounded-lg"
+          className="w-full border-gray-200 border rounded-lg px-3 py-2"
           type="text"
           id="email"
           name="email"
