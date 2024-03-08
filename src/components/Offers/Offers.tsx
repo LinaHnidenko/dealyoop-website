@@ -30,7 +30,11 @@ const Offers = () => {
   return (
     <section className="mb-12">
       <div className="min-w-[350px] max-w-[540px] md:max-w-[1200px] xl:max-w-[1192px] mx-auto md:p-6 p-4">
-        {error && <p>Something went wrong, please try again later</p>}
+        {error && (
+          <p className="text-center text-red-600 text-semibold">
+            Something went wrong, please try again later
+          </p>
+        )}
         {isLoading && (
           <div className="flex justify-center items-center">
             <Oval
