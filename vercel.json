@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": {
+        "Strict-Transport-Security": "max-age=0"
+      }
+    }
+  ]
+}
