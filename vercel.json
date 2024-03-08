@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/$1",
+      "src": "/api/offers/all(.*)",
+      "dest": "/api/offers/all/$1",
       "headers": {
         "Strict-Transport-Security": "max-age=0"
       }
