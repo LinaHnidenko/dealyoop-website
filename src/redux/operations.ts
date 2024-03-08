@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, { AxiosResponse } from "axios";
 
-axios.defaults.baseURL = "https://deayloop.backend.test.starway.agency:8002";
+axios.defaults.baseURL = "http://deayloop.backend.test.starway.agency:8002";
 
 interface Category {
   id: number;
@@ -42,7 +42,7 @@ export const getOffers = createAsyncThunk<
 >("offers/getAll", async (_, thunkAPI) => {
   try {
     const response: AxiosResponse<Offer[]> = await axios.get(
-      "https://deayloop.backend.test.starway.agency:8002/api/offers/all/"
+      "/api/offers/all/"
     );
     return response.data;
   } catch (error) {
